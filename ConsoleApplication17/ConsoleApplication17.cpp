@@ -32,7 +32,7 @@ namespace DuckDuckGoSearch
 
                 foreach(JsonElement item in relatedTopics.EnumerateArray())
                 {
-                    // Іноді є вкладені Topics
+                    
                     if (item.TryGetProperty("Topics", out JsonElement topics))
                     {
                         foreach(JsonElement subItem in topics.EnumerateArray())
